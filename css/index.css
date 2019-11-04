@@ -186,7 +186,7 @@ nav{
 	width:100%;
 	padding-top: 75px;
 	text-align: center;
-	margin-left: 35px;
+	
 }
 
 .header-text{
@@ -248,7 +248,8 @@ button{
 }
 
 .main-img img{
-	width: 100%;
+    width: 100%;
+    margin: auto 0;
 }
 
 /* --- SERVICES-PRODUCT --- */
@@ -409,6 +410,7 @@ li{
 
     body{
         max-width: 600px;
+        margin:auto;
     }
 
     nav{
@@ -446,4 +448,103 @@ li{
     .sub-services{
         padding: 3%;
     }
+
+}
+
+ /* MOBILE */
+
+
+@media (max-width: 534px){
+
+    body{
+        max-width: 450px;
+    }
+
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        border-bottom: 2px solid gray;
+        width: 600px;
+    }
+
+    .nav-container a{
+        font-size: 25px;
+        padding-bottom: 6%;
+        border-bottom: 2px solid gray;
+        width: 600px;
+    }
+
+}
+
+
+                            /* MOBILE */
+
+@media (max-width: 360px) {
+
+    body{
+        max-width: 300px;
+    }
+
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        border-bottom: 2px solid gray;
+        width: 600px;
+    }
+
+    .nav-container a{
+        font-size: 25px;
+        padding-bottom: 6%;
+        border-bottom: 2px solid gray;
+        width: 600px;
+    }
+
+
+
+    .header{
+        align-items: center;
+        padding-top: 17px;
+    }
+
+    .header-text h1{
+        font-size: 50px;
+
+    }
+
+
+    .about-page{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .services-page{
+        display: flex;
+        flex-direction: column;   
+        width: 100%;  
+    }
+
+    .about{
+        width: 100%;
+    }
+
+    .features{
+        width: 100%;
+    }
+
+    .sub-services{
+        width: 100%;
+    }
+
+    .contact{
+        padding-bottom: 10%;
+    }
+    }
+
 }
