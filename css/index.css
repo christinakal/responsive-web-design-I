@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -219,7 +219,7 @@ button{
 /* --- FEATURES-ABOUT --- */
 
 .about-page{
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	display:flex;
 }
 
@@ -244,7 +244,7 @@ button{
 }
 
 .services-page{
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .main-img img{
@@ -254,7 +254,7 @@ button{
 /* --- SERVICES-PRODUCT --- */
 
 .services-page{
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	display: flex;
 	position: relative;
 	width:100%
@@ -283,7 +283,7 @@ footer{
 	padding:20px;
 	text-align: center;
 	font-size:15px;
-	margin-bottom: 70px;
+	margin-bottom: 2px;
 }
 
 
@@ -401,47 +401,49 @@ li{
 
 
 
-/* ====== RESPONSIVE ====== */
+                /* ============     RESPONSIVE     ============ */
 
+                            /* TABLETS */
 
-@media only screen and (max-width: 550px) {
-	body {
-	  background-color: lightblue;
-	  text-align: center;
-	  margin: 20px;
-	}
+@media (max-width: 770px) {
 
-	nav{
-		flex-direction:column;
-	}
+    body{
+        max-width: 600px;
+    }
 
-	.nav-container a{
-		margin-bottom: 40px;
-	}
+    nav{
+        flex-direction: column-reverse;
+    }
 
-	.logo{
-		padding-top: 20px;
-		text-align: center;
-	}
+    .nav-container{
+        word-spacing: 37px;
+        padding-top: 5%;
+    }
 
-	.parent-info-boxes{
-		flex-direction: column;
-		align-items: center;
-	}
+    .header-img{
+        display:none;
+    }
 
-	.info-boxes{
-		flex-direction: column;
-		justify-content: space-between;
-		max-width: 300px;
-	}
+    header{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin:0;
+    }
 
-	.first-box-left{
-		margin-bottom: 40px;
-		margin-right: 0px;
-	}
+    .header-text{
+        margin-left: 2%;
+        display: block;
+        width: 100%;
+        margin-right: 10%;
+        padding-bottom: 12%;
+    }
 
-.facts{
-	flex-direction: column;
+    .services-page{
+        padding-bottom:2%;
+    }
+    
+    .sub-services{
+        padding: 3%;
+    }
 }
-
-  }
