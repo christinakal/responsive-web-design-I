@@ -161,14 +161,9 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	word-spacing: 44px;
+	word-spacing: 36px;
 	font-size: 15px;
 	padding: 20px;
-}
-
-
-.logo{
-	
 }
 
 .logo img{
@@ -448,6 +443,10 @@ li{
     
     .sub-services{
         padding: 3%;
+    }
+
+    .about, .features, .sub-services, .contact{
+        text-align: left;
     }
 
 }
